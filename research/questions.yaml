@@ -1,0 +1,31 @@
+questions:
+  - id: RQ-001
+    question: What is the minimum effective weekly mix of aerobic and strengthening activity for general adult health?
+    status: seeded
+    priority: high
+
+  - id: RQ-002
+    question: How should a daily calisthenics habit be structured so hard strength work is not overdone?
+    status: seeded
+    priority: high
+
+  - id: RQ-003
+    question: Which low-equipment movements best cover squat, hinge, push, pull, trunk, and locomotion?
+    status: open
+    priority: high
+
+  - id: RQ-004
+    question: What progression rule is simple enough to follow from daily logs?
+    status: seeded
+    priority: medium
+
+  - id: RQ-005
+    question: What log fields are most useful for deciding whether the routine is sustainable?
+    status: seeded
+    priority: medium
+
+  - id: RQ-006
+    question: What single piece of equipment would most improve the baseline?
+    status: open
+    priority: medium
+

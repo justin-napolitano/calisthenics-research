@@ -1,0 +1,42 @@
+claims:
+  - id: C-001
+    claim: The baseline should include both aerobic activity and muscle-strengthening.
+    status: supported
+    sources:
+      - src-cdc-adult-activity-overview
+      - src-hhs-pag-current
+
+  - id: C-002
+    claim: Strength work should cover the major muscle groups.
+    status: supported
+    sources:
+      - src-cdc-adult-activity-overview
+      - src-acsm-resistance-2026-infographic
+
+  - id: C-003
+    claim: Bodyweight and home-based resistance training are acceptable seed tools.
+    status: supported
+    sources:
+      - src-acsm-resistance-2026-infographic
+      - src-cleveland-calisthenics
+
+  - id: C-004
+    claim: Beginner full-body resistance sessions should start at 2 to 3 nonconsecutive days per week.
+    status: supported
+    sources:
+      - src-nsca-training-frequency
+      - src-acsm-resistance-2026-infographic
+
+  - id: C-005
+    claim: Warm-up and cool-down should use lower intensity movement.
+    status: supported
+    sources:
+      - src-mayo-warmup-cooldown
+
+  - id: C-006
+    claim: The seed routine should be reviewed from logs before progression.
+    status: working_assumption
+    sources:
+      - src-acsm-resistance-2026-infographic
+      - src-nsca-training-frequency
+
