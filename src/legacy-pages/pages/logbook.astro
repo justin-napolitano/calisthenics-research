@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { logbookModel } from "../data/site";
+---
+
+<BaseLayout title="Logbook">
+  <section class="section">
+    <div class="section-header">
+      <p class="eyebrow">Logbook</p>
+      <h1>Capture daily. Publish patterns.</h1>
+      <p>
+        The journal needs logs, but the public website should lead with weekly
+        summaries and reviews. Raw daily logs are working data unless a specific
+        entry is worth publishing.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid">
+      {logbookModel.map((item) => (
+        <article class="card">
+          <span class="tag">{item.publicDefault}</span>
+          <h3>{item.level}</h3>
+          <p>{item.purpose}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="section-header">
+      <p class="eyebrow">Weekly summary fields</p>
+      <h2>The first public log unit.</h2>
+      <p>
+        Weekly summaries should include morning floor days, moderate-equivalent
+        cardio minutes, weight-bearing minutes, calisthenics sessions, hot yoga,
+        soreness trend, pain flags summarized carefully, and the decision for
+        next week.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+

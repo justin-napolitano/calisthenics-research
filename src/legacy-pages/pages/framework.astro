@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { deferredProjects } from "../data/site";
+---
+
+<BaseLayout title="Deferred Framework">
+  <section class="section">
+    <div class="section-header">
+      <p class="eyebrow">Deferred framework</p>
+      <h1>Not the current priority.</h1>
+      <p>
+        The broader movement framework, self-defense thesis, and database work
+        still matter. They are deliberately paused until the health baseline and
+        journal workflow are stable.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid">
+      {deferredProjects.map((project) => (
+        <article class="card">
+          <h3>{project.title}</h3>
+          <p>{project.reason}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+

@@ -6,12 +6,40 @@ sources:
     accessed: 2026-06-08
     notes: Primary U.S. public health guideline hub for physical activity.
 
+  - id: src-hhs-pag-2nd-edition-pdf
+    title: Physical Activity Guidelines for Americans, 2nd edition
+    publisher: U.S. Department of Health and Human Services
+    url: https://health.gov/paguidelines/second-edition/pdf/Physical_Activity_Guidelines_2nd_edition.pdf
+    accessed: 2026-06-08
+    notes: U.S. adult aerobic and muscle-strengthening guideline source.
+
+  - id: src-who-pa-guidelines
+    title: WHO guidelines on physical activity and sedentary behaviour
+    publisher: World Health Organization
+    url: https://www.who.int/publications/i/item/9789240014886
+    accessed: 2026-06-08
+    notes: Global physical activity guideline source for adults and older adults.
+
   - id: src-cdc-adult-activity-overview
     title: "Adult Activity: An Overview"
     publisher: Centers for Disease Control and Prevention
     url: https://www.cdc.gov/physical-activity-basics/guidelines/adults.html
     accessed: 2026-06-08
     notes: Summarizes adult aerobic and muscle-strengthening targets.
+
+  - id: src-aha-physical-activity-recs
+    title: American Heart Association Recommendations for Physical Activity in Adults and Kids
+    publisher: American Heart Association
+    url: https://www.heart.org/en/healthy-living/exercise-and-physical-activity/fitness-basics/aha-recs-for-physical-activity-in-adults
+    accessed: 2026-06-08
+    notes: Heart-health physical activity recommendations and intensity examples.
+
+  - id: src-medlineplus-exercise-dose
+    title: How Much Exercise Do I Need?
+    publisher: MedlinePlus
+    url: https://medlineplus.gov/howmuchexercisedoineed.html
+    accessed: 2026-06-08
+    notes: NIH consumer summary of weekly aerobic and strengthening targets, including talk-test cues.
 
   - id: src-acsm-resistance-2026-infographic
     title: 5 Things to Know About Creating an Effective Resistance Training Plan
@@ -34,6 +62,13 @@ sources:
     accessed: 2026-06-08
     notes: General warm-up and cool-down guidance.
 
+  - id: src-mayo-hot-yoga
+    title: What is hot yoga?
+    publisher: Mayo Clinic Sports Medicine
+    url: https://sportsmedicine.mayoclinic.org/news/what-is-hot-yoga/
+    accessed: 2026-06-08
+    notes: Hot yoga overview and heat-related safety cautions.
+
   - id: src-cleveland-calisthenics
     title: Calisthenics Workout Routine and Benefits
     publisher: Cleveland Clinic
@@ -46,5 +81,144 @@ sources:
     publisher: American Council on Exercise
     url: https://www.acefitness.org/resources/everyone/exercise-library/
     accessed: 2026-06-08
-    notes: Movement reference source for future exercise cards.
+    notes: Practical form-reference source for routine exercise cards.
 
+  - id: src-nccih-yoga
+    title: "Yoga: Effectiveness and Safety"
+    publisher: National Center for Complementary and Integrative Health
+    url: https://www.nccih.nih.gov/health/yoga-effectiveness-and-safety
+    accessed: 2026-06-08
+    notes: Yoga evidence summary for wellness, balance, and safety.
+
+  - id: src-jacc-running-mortality-2014
+    title: Leisure-time running reduces all-cause and cardiovascular mortality risk
+    publisher: Journal of the American College of Cardiology
+    url: https://pubmed.ncbi.nlm.nih.gov/25082581/
+    accessed: 2026-06-08
+    notes: Observational evidence on running dose and mortality risk.
+
+  - id: src-bjsm-running-meta-analysis-2020
+    title: Is running associated with a lower risk of all-cause, cardiovascular and cancer mortality, and is the more the better?
+    publisher: British Journal of Sports Medicine
+    url: https://bjsm.bmj.com/content/54/15/898
+    accessed: 2026-06-08
+    notes: Systematic review and meta-analysis of running participation and mortality.
+
+  - id: src-lee-2022-pa-intensity-mortality
+    title: Long-term leisure-time physical activity intensity and all-cause and cause-specific mortality
+    publisher: Circulation
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9378548/
+    accessed: 2026-06-08
+    notes: Prospective cohort study on physical activity dose and mortality.
+
+  - id: src-arem-2015-pa-dose-mortality
+    title: Leisure Time Physical Activity and Mortality
+    publisher: JAMA Internal Medicine
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4451435/
+    accessed: 2026-06-08
+    notes: Pooled dose-response analysis of leisure-time physical activity and mortality.
+
+  - id: src-niams-exercise-bone-health
+    title: Exercise for Your Bone Health
+    publisher: National Institute of Arthritis and Musculoskeletal and Skin Diseases
+    url: https://www.niams.nih.gov/health-topics/exercise-your-bone-health
+    accessed: 2026-06-08
+    notes: NIH bone-health exercise guidance covering weight-bearing, resistance, and balance training.
+
+  - id: src-bhof-weight-bearing-strengthening
+    title: Weight-Bearing and Muscle-Strengthening Exercises
+    publisher: Bone Health and Osteoporosis Foundation
+    url: https://www.bonehealthandosteoporosis.org/preventing-fractures/exercise-to-stay-healthy/weight-bearing/
+    accessed: 2026-06-08
+    notes: Osteoporosis foundation guidance on weight-bearing and muscle-strengthening exercise.
+
+  - id: src-iof-osteoporosis-exercise
+    title: Exercise for individuals with osteoporosis
+    publisher: International Osteoporosis Foundation
+    url: https://www.osteoporosis.foundation/health-professionals/prevention/exercise/exercise-individuals-with-osteoporosis
+    accessed: 2026-06-08
+    notes: Exercise recommendations and safety framing for people with osteoporosis.
+
+  - id: src-mayo-osteoporosis-exercise
+    title: Exercising when you have osteoporosis
+    publisher: Mayo Clinic Press
+    url: https://mcpress.mayoclinic.org/healthy-aging/exercising-when-you-have-osteoporosis/
+    accessed: 2026-06-08
+    notes: Clinical guidance on weight-bearing, resistance, and back-strengthening exercises for osteoporosis.
+
+  - id: src-medlineplus-exercise-lifestyle-bones
+    title: Exercise, lifestyle, and your bones
+    publisher: MedlinePlus
+    url: https://medlineplus.gov/ency/patientinstructions/000492.htm
+    accessed: 2026-06-08
+    notes: NIH consumer guidance on weight-bearing exercise and bone protection.
+
+  - id: src-horak-postural-control-2006
+    title: "Postural orientation and equilibrium: what do we need to know about neural control of balance to prevent falls?"
+    publisher: Age and Ageing
+    url: https://pubmed.ncbi.nlm.nih.gov/16926210/
+    accessed: 2026-06-08
+    notes: Balance-control review defining postural orientation and equilibrium as functional goals.
+
+  - id: src-horak-macpherson-1995
+    title: Postural Orientation and Equilibrium
+    publisher: Comprehensive Physiology
+    url: https://onlinelibrary.wiley.com/doi/abs/10.1002/j.2040-4603.1995.tb01704.x
+    accessed: 2026-06-08
+    notes: Detailed review of postural orientation, equilibrium, postural strategies, and sensory control.
+
+  - id: src-winter-balance-posture-1995
+    title: Human balance and posture control during standing and walking
+    publisher: Gait and Posture
+    url: https://www.scienceopen.com/document?vid=2c33a4ff-9312-420f-b536-f03a15589547
+    accessed: 2026-06-08
+    notes: Classic biomechanics review on human balance and posture control.
+
+  - id: src-pollock-what-is-balance-2000
+    title: What is balance?
+    publisher: Clinical Rehabilitation
+    url: https://pubmed.ncbi.nlm.nih.gov/10945424/
+    accessed: 2026-06-08
+    notes: Review noting lack of universal agreement around the definition of balance.
+
+  - id: src-judo-com-throw-analysis
+    title: A Three-Dimensional Analysis Of The Center Of Mass For Three Different Judo Throwing Techniques
+    publisher: Journal of Sports Science and Medicine
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3863919/
+    accessed: 2026-06-08
+    notes: Judo biomechanics article discussing kuzushi, tsukuri, kake, and center of mass.
+
+  - id: src-judo-harai-goshi-competitive
+    title: A Kinematic Comparison of the Judo Throw Harai-Goshi during Competitive and Non-Competitive Conditions
+    publisher: Journal of Sports Science and Medicine
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3809049/
+    accessed: 2026-06-08
+    notes: Judo study comparing cooperative and competitive conditions.
+
+  - id: src-aikido-affordances-interaction
+    title: "Affordances in Interaction: The Case of Aikido"
+    publisher: Ecological Psychology
+    url: https://www.tandfonline.com/doi/full/10.1080/10407413.2017.1409589
+    accessed: 2026-06-08
+    notes: Interactional account of Aikido, reciprocity, redirection, and balance-breaking.
+
+  - id: src-aikido-antagonistic-coregulation
+    title: "The anatomy of antagonistic coregulation: Emergent coordination, path dependency, and the interplay of biomechanic parameters in Aikido"
+    publisher: Human Movement Science
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0167945717309235
+    accessed: 2026-06-08
+    notes: Aikido interaction study abstract describing redirection, balance-breaking, and nonviolence.
+
+  - id: src-cla-combat-sports-2024
+    title: "Initiation to combat sports from the perspective of ecological dynamics: the Constraints-Led Approach"
+    publisher: Revista de Artes Marciales Asiaticas
+    url: https://revpubli.unileon.es/index.php/artesmarciales/article/view/8380
+    accessed: 2026-06-08
+    notes: Theoretical combat sports skill-acquisition article using ecological dynamics and constraints-led approach.
+
+  - id: src-constraints-led-interceptive-review-2019
+    title: "The effectiveness of constraints-led training on skill development in interceptive sports: A systematic review"
+    publisher: International Journal of Sports Science and Coaching
+    url: https://journals.sagepub.com/doi/10.1177/1747954118812461
+    accessed: 2026-06-08
+    notes: Systematic review of constraints-led training in interceptive sports.

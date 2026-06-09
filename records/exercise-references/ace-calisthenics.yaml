@@ -1,0 +1,174 @@
+exercise_references:
+  - id: ace.cat-cow
+    name: Cat-Cow
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/15/cat-cow/
+    protocol_use: Spine wake-up
+
+  - id: ace.downward-facing-dog
+    name: Downward-Facing Dog
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/18/downward-facing-dog/
+    protocol_use: Down-dog plank push-up flow
+
+  - id: ace.bent-knee-push-up
+    name: Bent-Knee Push-Up
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/13/bent-knee-push-up/
+    protocol_use: Push-up regression
+
+  - id: ace.push-up
+    name: Push-Up
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/41/push-up/
+    protocol_use: Push-up progression
+
+  - id: ace.push-up-with-single-leg-raise
+    name: Push-up with Single-leg Raise
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/42/push-up-with-single-leg-raise/
+    protocol_use: Advanced integrated push test
+
+  - id: ace.chin-ups
+    name: Chin-ups
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/190/chin-ups/
+    protocol_use: Equipment layer vertical pull option
+
+  - id: ace.pull-ups
+    name: Pull-ups
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/191/pull-ups/
+    protocol_use: Equipment layer vertical pull option
+
+  - id: ace.bodyweight-squat
+    name: Bodyweight Squat
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/135/bodyweight-squat/
+    protocol_use: Squat pattern
+
+  - id: ace.goblet-squat
+    name: Goblet Squat
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/362/goblet-squat/
+    protocol_use: Equipment layer loaded squat pattern
+
+  - id: ace.squat-jumps
+    name: Squat Jumps
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/116/squat-jumps/
+    protocol_use: Advanced low-dose power and bone-loading test
+
+  - id: ace.bird-dog
+    name: Bird-Dog
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/14/bird-dog/
+    protocol_use: Core B
+
+  - id: ace.front-plank
+    name: Front Plank
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/32/front-plank/
+    protocol_use: Core A
+
+  - id: ace.modified-side-plank
+    name: Modified Side Plank
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/100/side-plank-modified/
+    protocol_use: Core B
+
+  - id: ace.standing-calf-raises-wall
+    name: Standing Calf Raises - Wall
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/73/standing-calf-raises-wall/
+    protocol_use: Bone-loading finish
+
+  - id: ace.glute-bridge
+    name: Glute Bridge
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/49/glute-bridge/
+    protocol_use: Once-weekly supine system posterior-chain pattern
+
+  - id: ace.supine-pelvic-tilts
+    name: Supine Pelvic Tilts
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/7/supine-pelvic-tilts/
+    protocol_use: Once-weekly supine system pelvis/core pattern
+
+  - id: ace.forward-lunge
+    name: Forward Lunge
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/94/forward-lunge/
+    protocol_use: Personal calisthenics single-leg pattern
+
+  - id: ace.forward-lunge-with-arm-drivers
+    name: Forward Lunge with Arm Drivers
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/95/forward-lunge-with-arm-drivers/
+    protocol_use: Advanced lunge and trunk-control test
+
+  - id: ace.side-lunge
+    name: Side Lunge
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/50/side-lunge/
+    protocol_use: Intermediate lateral leg pattern
+
+  - id: ace.cycled-split-squat-jump
+    name: Cycled Split-Squat Jump
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/234/cycled-split-squat-jump/
+    protocol_use: Optional advanced unilateral power test
+
+  - id: ace.hip-rotations-push-up-position
+    name: Hip Rotations (Push-up Position)
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/110/hip-rotations-push-up-position/
+    protocol_use: Intermediate dynamic core and moving plank pattern
+
+  - id: ace.ckc-parascapular-exercises
+    name: CKC Parascapular Exercises
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/259/ckc-parascapular-exercises/
+    protocol_use: Intermediate tight-space scapular and trunk-control pattern
+
+  - id: ace.high-plank-t-spine-rotation
+    name: High Plank T-Spine Rotation
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/330/high-plank-t-spine-rotation/
+    protocol_use: Advanced rotation and shoulder-control test
+
+  - id: ace.inchworms
+    name: Inchworms
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/254/inchworms/
+    protocol_use: Advanced full-body integrated control test
+
+  - id: ace.suitcase-carry
+    name: Suitcase Carry
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/389/suitcase-carry/
+    protocol_use: Equipment layer loaded carry pattern
+
+  - id: ace.single-arm-overhead-press
+    name: Single Arm Overhead Press
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/395/single-arm-overhead-press/
+    protocol_use: Equipment layer vertical press pattern
+
+  - id: ace.half-turkish-get-up
+    name: Half Turkish Get-up
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/381/half-turkish-get-up/
+    protocol_use: Once-weekly supine system integrated core pattern
+
+  - id: ace.contralateral-limb-raises
+    name: Contralateral Limb Raises
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/53/contralateral-limb-raises/
+    protocol_use: Reserve candidate only; not active because the current protocol avoids lying flat
+
+  - id: ace.cobra
+    name: Cobra Exercise
+    source: ACE Exercise Library
+    url: https://www.acefitness.org/resources/everyone/exercise-library/16/cobra/
+    protocol_use: Reserve candidate only; not active because the current protocol avoids lying flat

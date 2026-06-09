@@ -1,8 +1,8 @@
 .DS_Store
 .idea/
 .vscode/
+.astro/
 node_modules/
 dist/
 tmp/
 *.log
-

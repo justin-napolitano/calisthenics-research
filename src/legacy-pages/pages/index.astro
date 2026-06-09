@@ -1,0 +1,128 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import {
+  activeProjects,
+  currentUnderstanding,
+  evidenceHighlights,
+  weeklyPlan,
+} from "../data/site";
+---
+
+<BaseLayout>
+  <section class="journal-hero">
+    <div class="journal-hero-copy">
+      <p class="eyebrow">Living research summary</p>
+      <h1>Health Journal</h1>
+      <p>
+        A public working surface for understanding what I am doing in my health
+        practice, what I currently believe, what I am testing, and what the logs
+        eventually prove or disprove.
+      </p>
+      <div class="hero-actions">
+        <a class="button" href="/projects/">View active projects</a>
+        <a class="button secondary" href="/routine/">Current protocol</a>
+      </div>
+    </div>
+    <div class="journal-status" aria-label="Current site status">
+      <span class="status-pill">Current phase</span>
+      <strong>Build the baseline</strong>
+      <p>
+        Cardio, calisthenics, morning floor, and hot yoga integration are active.
+        iOS logging, database work, and self-defense research are deferred.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <p class="eyebrow">Current understanding</p>
+      <h2>What I think is true right now.</h2>
+      <p>
+        These are not final recommendations. They are the working beliefs that
+        drive the current protocol and decide what gets logged.
+      </p>
+    </div>
+    <div class="grid">
+      {currentUnderstanding.map((item) => (
+        <article class="card">
+          <span class={`tag status-${item.status}`}>{item.status}</span>
+          <h3>{item.label}</h3>
+          <p>{item.statement}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="section-header">
+      <p class="eyebrow">Active projects</p>
+      <h2>Research projects before features.</h2>
+      <p>
+        The site is organized around what is being tested. Each project has a
+        thesis, protocol, metrics, falsifiers, and a next decision point.
+      </p>
+    </div>
+    <div class="grid">
+      {activeProjects.map((project) => (
+        <article class="card">
+          <span class="tag">{project.status}</span>
+          <h3>{project.title}</h3>
+          <p>{project.hypothesis}</p>
+          <a class="text-link" href={`/projects/${project.slug}/`}>Open project</a>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <p class="eyebrow">This week</p>
+      <h2>The baseline is deliberately simple.</h2>
+      <p>
+        The goal is not to optimize every day. The goal is to create enough
+        consistent signal to decide what should change after review.
+      </p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Focus</th>
+            <th>Intent</th>
+          </tr>
+        </thead>
+        <tbody>
+          {weeklyPlan.map((item) => (
+            <tr>
+              <td>{item.day}</td>
+              <td>{item.focus}</td>
+              <td>{item.intent}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section evidence-band">
+    <div class="section-header">
+      <p class="eyebrow">Evidence status</p>
+      <h2>Claims are labeled before they are trusted.</h2>
+      <p>
+        The site separates guideline-backed claims from personal hypotheses so
+        the journal can improve without pretending the first plan is final.
+      </p>
+    </div>
+    <div class="grid">
+      {evidenceHighlights.map((item) => (
+        <article class="card">
+          <span class={`tag status-${item.status}`}>{item.status}</span>
+          <h3>{item.label}</h3>
+          <p>{item.claim}</p>
+          <p class="source-line">{item.source}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

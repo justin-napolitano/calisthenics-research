@@ -4,7 +4,7 @@ Date: 2026-06-08
 
 ## Status
 
-Accepted for seed phase.
+Superseded by [ADR-0002](0002-health-first-integrated-week.md).
 
 ## Context
 
@@ -14,12 +14,14 @@ The tension is that a daily habit is useful, but hard full-body training every d
 
 ## Decision
 
-Define the routine as daily practice with two intensities:
+The original seed defined the routine as daily practice with two intensities:
 
 - Hard full-body circuit on Monday, Wednesday, and Friday.
 - Easy circuit, walk, or mobility block on the other days.
 
 All days are logged. Only hard days are progressed.
+
+ADR-0002 revises this after the user clarified fixed Wednesday 5K, Thursday hot yoga, and a health-first goal where heart health, stability, and mobility outrank mass and peak strength.
 
 ## Consequences
 
@@ -34,4 +36,3 @@ Tradeoffs:
 
 - The phrase "daily routine" now means daily habit, not identical work every day.
 - Pulling strength is underdeveloped until a safe row, band, ring, or bar option is added.
-

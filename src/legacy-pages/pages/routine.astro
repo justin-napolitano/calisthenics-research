@@ -1,0 +1,429 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import {
+  equipmentLayer,
+  morningFloor,
+  personalStrengthSessions,
+  strengthProtocolTiers,
+  targetedModules,
+  weeklySupineSystem,
+  weeklyPlan,
+} from "../data/site";
+
+const routineSections = [
+  {
+    href: "#week",
+    label: "Weekly schedule",
+    detail: "Fixed cardio, yoga, recovery, and calisthenics anchors.",
+  },
+  {
+    href: "#morning",
+    label: "Morning baseline",
+    detail: "Daily 10-15 minute floor routine.",
+  },
+  {
+    href: "#strength",
+    label: "A/B strength ladder",
+    detail: "Beginner, intermediate, and advanced full-body options.",
+  },
+  {
+    href: "#targeted",
+    label: "Targeted modules",
+    detail: "Small optional blocks for core, posture, legs, and balance.",
+  },
+  {
+    href: "#equipment",
+    label: "Equipment layer",
+    detail: "Pull-up and kettlebell-compatible work.",
+  },
+  {
+    href: "#supine",
+    label: "Supine block",
+    detail: "One weekly floor session for on-the-back work.",
+  },
+  {
+    href: "#review",
+    label: "Progression rule",
+    detail: "How to decide what changes next.",
+  },
+];
+---
+
+<BaseLayout title="Routine">
+  <section class="section routine-hero">
+    <div class="routine-hero-grid">
+      <div>
+        <p class="eyebrow">Current protocol</p>
+        <h1>Baseline Week</h1>
+        <p>
+          Heart health, stability, mobility, bone-health support, and
+          repeatability before performance goals.
+        </p>
+      </div>
+      <div class="routine-snapshot" aria-label="Current protocol snapshot">
+        <div>
+          <span>Cardio</span>
+          <strong>180-240 min</strong>
+          <p>moderate-equivalent target</p>
+        </div>
+        <div>
+          <span>Strength</span>
+          <strong>2 days</strong>
+          <p>focused full-body work</p>
+        </div>
+        <div>
+          <span>Daily floor</span>
+          <strong>10-15 min</strong>
+          <p>low-fatigue baseline</p>
+        </div>
+        <div>
+          <span>Review</span>
+          <strong>4 weeks</strong>
+          <p>first full protocol decision</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="routine-docs-layout">
+    <aside class="routine-sidebar">
+      <nav class="routine-toc" aria-labelledby="routine-toc-heading">
+        <h2 id="routine-toc-heading">On This Page</h2>
+        <ol>
+          {routineSections.map((section) => (
+            <li>
+              <a href={section.href}>
+                <span>{section.label}</span>
+                <small>{section.detail}</small>
+              </a>
+            </li>
+          ))}
+        </ol>
+      </nav>
+    </aside>
+
+    <div class="routine-docs-main">
+      <section class="section" id="week">
+        <div class="section-header">
+          <p class="eyebrow">Weekly schedule</p>
+          <h2>Fixed anchors, easy decisions.</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Focus</th>
+                <th>Intent</th>
+              </tr>
+            </thead>
+            <tbody>
+              {weeklyPlan.map((item) => (
+                <tr>
+                  <td>{item.day}</td>
+                  <td>{item.focus}</td>
+                  <td>{item.intent}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section tight-section" id="morning">
+        <div class="section-header">
+          <p class="eyebrow">Daily floor</p>
+          <h2>Morning baseline.</h2>
+          <p>
+            The morning floor is preparation, not training fatigue. It keeps
+            mobility, balance, posture, low-dose bone-loading, and trunk control
+            visible every day.
+          </p>
+        </div>
+        <article class="routine-panel">
+          <div class="protocol-heading">
+            <div>
+              <span class="tag">10-15 minutes</span>
+              <h3>Morning Floor</h3>
+            </div>
+            <p>Alternate Core A and Core B by day.</p>
+          </div>
+          <div class="table-wrap">
+            <table class="compact-table">
+              <thead>
+                <tr>
+                  <th>Pattern</th>
+                  <th>Movement</th>
+                  <th>Count</th>
+                  <th>References</th>
+                </tr>
+              </thead>
+              <tbody>
+                {morningFloor.map((item) => (
+                  <tr>
+                    <td>{item.pattern}</td>
+                    <td>{item.movement}</td>
+                    <td>{item.count}</td>
+                    <td>
+                      <div class="reference-links compact" aria-label={`${item.step} form references`}>
+                        {item.references.map((reference) => (
+                          <a href={reference.url} rel="noreferrer" target="_blank">
+                            {reference.source}: {reference.name}
+                          </a>
+                        ))}
+                      </div>
+                      {item.note && <span class="source-line inline">{item.note}</span>}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="strength">
+        <div class="section-header">
+          <p class="eyebrow">Active strength protocol</p>
+          <h2>A/B ladder for testing mainstays.</h2>
+          <p>
+            Use one Monday A option and one Friday B option. Start with intermediate
+            unless recovery says otherwise; advanced movements are tests, not the
+            normal workload.
+          </p>
+        </div>
+        <div class="table-wrap review-table-wrap">
+          <table class="review-table">
+            <thead>
+              <tr>
+                <th>Tier</th>
+                <th>Role</th>
+                <th>Dose</th>
+                <th>Use when</th>
+              </tr>
+            </thead>
+            <tbody>
+              {strengthProtocolTiers.map((tier) => (
+                <tr>
+                  <td>{tier.tier}</td>
+                  <td>{tier.role}</td>
+                  <td>{tier.dose}</td>
+                  <td>{tier.note}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div class="protocol-stack">
+          {personalStrengthSessions.map((session) => (
+            <article class="routine-panel">
+              <div class="protocol-heading">
+                <div>
+                  <span class="tag">{session.day}</span>
+                  <h3>{session.title}</h3>
+                </div>
+                <p>{session.intent}</p>
+              </div>
+              <div class="table-wrap">
+                <table class="compact-table">
+                  <thead>
+                    <tr>
+                      <th>Pattern</th>
+                      <th>Movement</th>
+                      <th>Count</th>
+                      <th>References</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {session.movements.map((movement) => (
+                      <tr>
+                        <td>{movement.pattern}</td>
+                        <td>{movement.movement}</td>
+                        <td>{movement.count}</td>
+                        <td>
+                          <div class="reference-links compact">
+                            {movement.references.map((reference) => (
+                              <a href={reference.url} rel="noreferrer" target="_blank">
+                                {reference.source}: {reference.name}
+                              </a>
+                            ))}
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="section evidence-band" id="targeted">
+        <div class="section-header">
+          <p class="eyebrow">Targeted modules</p>
+          <h2>Short blocks, not extra workouts.</h2>
+          <p>
+            Use these only when the full-body sessions, Wednesday 5K, and Thursday
+            hot yoga are recovering cleanly.
+          </p>
+        </div>
+        <div class="table-wrap">
+          <table class="review-table">
+            <thead>
+              <tr>
+                <th>Module</th>
+                <th>Cadence</th>
+                <th>Movements</th>
+                <th>References</th>
+              </tr>
+            </thead>
+            <tbody>
+              {targetedModules.map((module) => (
+                <tr>
+                  <td>{module.title}</td>
+                  <td>{module.cadence}</td>
+                  <td>
+                    <ul class="clean-list compact-list">
+                      {module.movements.map((movement) => <li>{movement}</li>)}
+                    </ul>
+                  </td>
+                  <td>
+                    <div class="reference-links compact">
+                      {module.references.map((reference) => (
+                        <a href={reference.url} rel="noreferrer" target="_blank">
+                          {reference.source}: {reference.name}
+                        </a>
+                      ))}
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="equipment">
+        <div class="section-header">
+          <p class="eyebrow">Equipment layer</p>
+          <h2>Pull, carry, and load without changing the baseline.</h2>
+          <p>
+            This is a separate 1-2 day layer for pull-up equipment and kettlebells.
+            It covers the missing pull and loaded-carry patterns while keeping the
+            daily floor and A/B ladder stable.
+          </p>
+        </div>
+        <div class="protocol-stack">
+          {equipmentLayer.map((session) => (
+            <article class="routine-panel">
+              <div class="protocol-heading">
+                <div>
+                  <span class="tag">{session.cadence}</span>
+                  <h3>{session.title}</h3>
+                </div>
+                <p>{session.intent}</p>
+              </div>
+              <div class="table-wrap">
+                <table class="compact-table">
+                  <thead>
+                    <tr>
+                      <th>Pattern</th>
+                      <th>Movement</th>
+                      <th>Count</th>
+                      <th>References</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {session.movements.map((movement) => (
+                      <tr>
+                        <td>{movement.pattern}</td>
+                        <td>{movement.movement}</td>
+                        <td>{movement.count}</td>
+                        <td>
+                          <div class="reference-links compact">
+                            {movement.references.map((reference) => (
+                              <a href={reference.url} rel="noreferrer" target="_blank">
+                                {reference.source}: {reference.name}
+                              </a>
+                            ))}
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="section evidence-band" id="supine">
+        <div class="section-header">
+          <p class="eyebrow">Supine block</p>
+          <h2>One intentional floor session.</h2>
+          <p>
+            Supine work is allowed once weekly as its own block. Do the whole block
+            after getting down once, then return to standing work another day.
+          </p>
+        </div>
+        <div class="protocol-stack">
+          {weeklySupineSystem.map((session) => (
+            <article class="routine-panel">
+              <div class="protocol-heading">
+                <div>
+                  <span class="tag">{session.cadence}</span>
+                  <h3>{session.title}</h3>
+                </div>
+                <p>{session.intent}</p>
+              </div>
+              <div class="table-wrap">
+                <table class="compact-table">
+                  <thead>
+                    <tr>
+                      <th>Pattern</th>
+                      <th>Movement</th>
+                      <th>Count</th>
+                      <th>References</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {session.movements.map((movement) => (
+                      <tr>
+                        <td>{movement.pattern}</td>
+                        <td>{movement.movement}</td>
+                        <td>{movement.count}</td>
+                        <td>
+                          <div class="reference-links compact">
+                            {movement.references.map((reference) => (
+                              <a href={reference.url} rel="noreferrer" target="_blank">
+                                {reference.source}: {reference.name}
+                              </a>
+                            ))}
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="section tight-section" id="review">
+        <div class="section-header">
+          <p class="eyebrow">Progression rule</p>
+          <h2>Quality, recovery, then volume.</h2>
+          <p>
+            Progress smoother reps, better range, better balance, consistent weekly
+            completion, and clean recovery before harder variations, more running,
+            or higher intensity.
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+</BaseLayout>

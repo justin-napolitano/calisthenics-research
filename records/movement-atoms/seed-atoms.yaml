@@ -1,0 +1,151 @@
+movement_atoms:
+  - id: atom.base-tripod-foot
+    name: Tripod foot base
+    domains:
+      - calisthenics
+      - running
+      - grappling
+      - boxing
+      - muay_thai
+      - yoga
+    status: seed
+    intent: Maintain stable foot contact for force production and balance.
+    base: Heel, big toe mound, and little toe mound maintain usable contact.
+    alignment: Knee tracks over foot without collapsing inward under normal load.
+    force_path: Ground reaction force travels through foot, ankle, knee, hip, and trunk.
+    range: Usable in standing, squat, lunge, guard, check, and balance positions.
+    timing: Established before producing force or absorbing contact.
+    constraints:
+      - surface friction
+      - ankle mobility
+      - fatigue
+      - footwear
+    failure_modes:
+      - arch collapse
+      - heel lift when not intended
+      - knee collapse
+      - weight stuck on toes
+    drills:
+      - single-leg balance
+      - bodyweight squat
+      - split squat hold
+      - boxing stance hold
+      - yoga tree pose
+    evidence:
+      - C-002
+    transfer:
+      - atom.center-of-mass-over-base
+      - atom.force-from-floor
+
+  - id: atom.center-of-mass-over-base
+    name: Center of mass over base
+    domains:
+      - calisthenics
+      - running
+      - grappling
+      - boxing
+      - muay_thai
+      - yoga
+    status: seed
+    intent: Keep the body balanced enough to move, strike, resist, or recover.
+    base: Base can be feet, hands, knees, opponent contact, or floor contact.
+    alignment: Spine and pelvis organize around the available support.
+    force_path: Force is usable when the center of mass can be managed over or through the base.
+    range: Changes dynamically across stance, squat, hinge, shot, kick, and balance.
+    timing: Adjusted before transitions and immediately after perturbation.
+    constraints:
+      - narrow base
+      - external contact
+      - speed
+      - fatigue
+    failure_modes:
+      - falling past recovery point
+      - overreaching
+      - posture collapse
+      - delayed step
+    drills:
+      - single-leg balance
+      - bear crawl hold
+      - stance step
+      - level change
+      - shadowboxing pivot
+    evidence:
+      - C-002
+    transfer:
+      - atom.base-tripod-foot
+      - atom.hip-hinge-load
+
+  - id: atom.force-from-floor
+    name: Force from floor
+    domains:
+      - calisthenics
+      - running
+      - boxing
+      - muay_thai
+      - grappling
+    status: seed
+    intent: Produce useful force by pushing against the ground instead of only moving limbs.
+    base: Stable foot, hand, knee, or floor contact.
+    alignment: Force travels through connected joints without uncontrolled leakage.
+    force_path: Ground reaction force transfers into hips, trunk, shoulder, or opponent contact.
+    range: Small in stance adjustments, larger in squat, stride, punch, kick, bridge, and shot entry.
+    timing: Begins before visible limb acceleration.
+    constraints:
+      - base stability
+      - joint position
+      - timing
+      - contact quality
+    failure_modes:
+      - arm-only punching
+      - knee-dominant collapse
+      - disconnected trunk
+      - slipping or unstable base
+    drills:
+      - slow squat
+      - glute bridge
+      - wall punch mechanics
+      - running stride drill
+      - bridge and shrimp
+    evidence:
+      - C-002
+    transfer:
+      - atom.base-tripod-foot
+      - atom.trunk-rotation-transfer
+
+  - id: atom.trunk-rotation-transfer
+    name: Trunk rotation transfer
+    domains:
+      - running
+      - boxing
+      - muay_thai
+      - grappling
+      - calisthenics
+    status: seed
+    intent: Transfer force through the trunk while keeping balance and structure.
+    base: Feet, hips, or floor contact provide the initial anchor.
+    alignment: Rib cage and pelvis rotate without losing spine control.
+    force_path: Force transfers from lower body through trunk into shoulder, arm, hip, or opponent contact.
+    range: Small in running, moderate in punching, larger in kicking and grappling turns.
+    timing: Rotation follows base setup and precedes or matches distal action.
+    constraints:
+      - hip mobility
+      - thoracic mobility
+      - bracing strategy
+      - speed
+    failure_modes:
+      - over-rotation
+      - arm-only striking
+      - lumbar twisting under load
+      - balance loss after rotation
+    drills:
+      - dead bug
+      - side plank
+      - shadowboxing cross
+      - medicine-free hip turn
+      - technical stand-up pattern
+    evidence:
+      - C-002
+    transfer:
+      - atom.force-from-floor
+      - atom.center-of-mass-over-base
+

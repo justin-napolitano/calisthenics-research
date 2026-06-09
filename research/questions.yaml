@@ -29,3 +29,37 @@ questions:
     status: open
     priority: medium
 
+  - id: RQ-007
+    question: What running volume best supports heart health when the fixed anchor is a Wednesday night 5K?
+    status: seeded
+    priority: high
+
+  - id: RQ-008
+    question: How should Thursday hot yoga be counted and sequenced in the weekly training load?
+    status: seeded
+    priority: medium
+
+  - id: RQ-009
+    question: What weekly cardio range is optimal enough for heart health while remaining sustainable with a Wednesday 5K?
+    status: active
+    priority: high
+
+  - id: RQ-010
+    question: What calisthenics dose best supports health, stability, mobility, and function without competing with cardio recovery?
+    status: active
+    priority: high
+
+  - id: RQ-011
+    question: Which mobility and balance fields should be logged to decide whether the calisthenics plan is working?
+    status: open
+    priority: medium
+
+  - id: RQ-012
+    question: Are running and cardio enough for bone health, or does the plan need explicit resistance, impact, posture, and balance work?
+    status: seeded
+    priority: high
+
+  - id: RQ-013
+    question: What morning floor best supports mobility, balance, posture, and bone-loading without creating training fatigue?
+    status: active
+    priority: high

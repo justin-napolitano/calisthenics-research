@@ -3,22 +3,31 @@
 Status: seed
 Date: 2026-06-08
 
-This repo is a lightweight research and logging workspace for building a sustainable calisthenics baseline. The immediate goal is simple: keep a daily movement habit, record what happened, and let research and personal response improve the routine over time.
+This repo is a lightweight research and logging workspace for building a sustainable health-first movement baseline and a long-term martial movement framework. The immediate goal is simple: keep a daily movement habit, record what happened, and let research and personal response improve the routine over time.
+
+The larger research goal is to test whether martial and health practices can be unified through a kinesiology framework around equilibrium: preserving my own balance, posture, perception, and mobility while disrupting another person's balance, posture, base, timing, perception, or recovery options enough to escape, put them on the ground, or immobilize them.
 
 ## Thesis
 
-A useful baseline routine should be easy enough to do daily, structured enough to train the whole body, and conservative enough to leave room for recovery. The seed routine treats "daily" as a daily habit anchor, while harder full-body strength sessions happen on nonconsecutive days.
+A useful baseline routine should be easy enough to do daily, structured enough to support heart health, stability, mobility, and whole-body strength, and conservative enough to leave room for recovery. Running volume and calisthenics progression should serve long-term health first; mass and peak strength are secondary.
+
+Implementation note: site, database, self-defense, and movement-record work is WIP. The current research priority is cardio and calisthenics first, then equilibrium and self-defense.
 
 ## Current Baseline
 
 Use this until there are enough logs to justify changes:
 
-- Hard strength days: Monday, Wednesday, Friday.
-- Easy baseline days: Tuesday, Thursday, Saturday, Sunday.
-- Daily floor: warm up, do one easy circuit or mobility block, and log the session.
-- Hard-day cap for now: 2 to 3 clean rounds, no failure reps.
+- Monday: stability-focused calisthenics A.
+- Tuesday: easy aerobic work, usually walk or walk-jog.
+- Wednesday: dedicated night 5K.
+- Thursday: hot yoga.
+- Friday: stability-focused calisthenics B.
+- Saturday: easy aerobic run, walk-jog, bike, or long walk.
+- Sunday: recovery walk and mobility.
+- Weekly cardio target: 150 to 300 moderate-equivalent minutes, built around the Wednesday 5K.
+- Calisthenics target: 2 focused sessions per week plus small daily mobility.
 
-The routine is documented in [docs/02-baseline-routine.md](docs/02-baseline-routine.md).
+The integrated routine is documented in [docs/02-baseline-routine.md](docs/02-baseline-routine.md). The cardio plan is documented in [docs/07-running-cardio-routine.md](docs/07-running-cardio-routine.md).
 
 ## Repository Map
 
@@ -29,9 +38,17 @@ The routine is documented in [docs/02-baseline-routine.md](docs/02-baseline-rout
 - [docs/04-logging-model.md](docs/04-logging-model.md): what to record after each session.
 - [docs/05-roadmap.md](docs/05-roadmap.md): first planning milestones.
 - [docs/06-bibliography.md](docs/06-bibliography.md): source list.
+- [docs/07-running-cardio-routine.md](docs/07-running-cardio-routine.md): running and cardio baseline.
+- [docs/research/README.md](docs/research/README.md): research index and implementation gate.
+- [docs/research/cardio/2026-06-08-cardio-thesis.md](docs/research/cardio/2026-06-08-cardio-thesis.md): cardio thesis to test.
+- [docs/research/calisthenics/2026-06-08-calisthenics-thesis.md](docs/research/calisthenics/2026-06-08-calisthenics-thesis.md): calisthenics thesis to test.
+- [docs/execplans/EP-0004-calisthenics-cardio-thesis-review.md](docs/execplans/EP-0004-calisthenics-cardio-thesis-review.md): active health-baseline research plan.
+- [docs/research/equilibrium/2026-06-08-thesis-brief.md](docs/research/equilibrium/2026-06-08-thesis-brief.md): equilibrium thesis brief.
+- [docs/execplans/EP-0003-equilibrium-literature-review.md](docs/execplans/EP-0003-equilibrium-literature-review.md): deferred self-defense/equilibrium research plan.
 - [docs/planning/2026-06-08-first-14-days.md](docs/planning/2026-06-08-first-14-days.md): first operational plan.
 - [docs/research/claim-ledger.md](docs/research/claim-ledger.md): seed claims and evidence links.
 - [docs/research/2026-06-08-source-notes.md](docs/research/2026-06-08-source-notes.md): first source notes.
+- [docs/research/2026-06-08-running-yoga-source-notes.md](docs/research/2026-06-08-running-yoga-source-notes.md): running, heart-health, and yoga notes.
 - [logs/TEMPLATE.md](logs/TEMPLATE.md): daily log template.
 - [research/questions.yaml](research/questions.yaml): machine-readable research backlog.
 - [records/claims.yaml](records/claims.yaml): structured seed claims.
@@ -40,8 +57,8 @@ The routine is documented in [docs/02-baseline-routine.md](docs/02-baseline-rout
 ## First Use
 
 1. Copy `logs/TEMPLATE.md` to `logs/YYYY-MM-DD.md`.
-2. Mark the day as `hard`, `easy`, `recovery`, or `walk_only`.
-3. Record reps, effort, soreness, and any pain signals.
+2. Mark the day as `calisthenics`, `run`, `cardio`, `hot_yoga`, `recovery`, or `missed`.
+3. Record cardio minutes, reps, effort, soreness, and any pain signals.
 4. Review after 14 days before changing the baseline.
 
 ## Safety Note

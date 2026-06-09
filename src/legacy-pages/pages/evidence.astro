@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { evidenceHighlights } from "../data/site";
+---
+
+<BaseLayout title="Evidence">
+  <section class="section">
+    <div class="section-header">
+      <p class="eyebrow">Evidence</p>
+      <h1>Claims, assumptions, and tests.</h1>
+      <p>
+        This page is the public summary of the evidence spine. Detailed source
+        notes and claim records live in the repo; the site shows the claims that
+        currently shape the protocol.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid">
+      {evidenceHighlights.map((item) => (
+        <article class="card">
+          <span class={`tag status-${item.status}`}>{item.status}</span>
+          <h3>{item.label}</h3>
+          <p>{item.claim}</p>
+          <p class="source-line">{item.source}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="section-header">
+      <p class="eyebrow">Rule</p>
+      <h2>Do not hide uncertainty.</h2>
+      <p>
+        Guideline-backed claims, evidence-informed hypotheses, personal
+        experiments, and rejected ideas should remain visibly separate.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+

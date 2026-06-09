@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/movement-atom.schema.json",
+  "title": "MovementAtom",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "domains",
+    "status",
+    "intent",
+    "base",
+    "alignment",
+    "force_path",
+    "range",
+    "timing",
+    "constraints",
+    "failure_modes",
+    "drills",
+    "evidence",
+    "transfer"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "domains": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["seed", "researched", "tested", "reviewed", "deprecated"]
+    },
+    "intent": { "type": "string" },
+    "base": { "type": "string" },
+    "alignment": { "type": "string" },
+    "force_path": { "type": "string" },
+    "range": { "type": "string" },
+    "timing": { "type": "string" },
+    "constraints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "failure_modes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "drills": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "transfer": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}
+

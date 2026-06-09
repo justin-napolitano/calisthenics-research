@@ -1,0 +1,81 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { activeProjects } from "../../data/site";
+
+export function getStaticPaths() {
+  return activeProjects.map((project) => ({
+    params: { slug: project.slug },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+---
+
+<BaseLayout title={project.title}>
+  <section class="section project-hero">
+    <div class="section-header">
+      <p class="eyebrow">{project.domain}</p>
+      <h1>{project.title}</h1>
+      <p>{project.thesis}</p>
+      <div class="metadata-row">
+        <span>{project.status}</span>
+        <span>Started {project.started}</span>
+        <span>{project.nextDecision}</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="split">
+      <div>
+        <p class="eyebrow">Hypothesis</p>
+        <h2>What this project is testing.</h2>
+        <p>{project.hypothesis}</p>
+      </div>
+      <article class="card emphasis">
+        <span class="tag">Decision rule</span>
+        <h3>Change only after signal.</h3>
+        <p>
+          This protocol should be changed after logs show a repeated pattern,
+          not because one day felt easy or hard.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="three-column">
+      <div>
+        <p class="eyebrow">Protocol</p>
+        <h2>What to do.</h2>
+        <ul class="clean-list">
+          {project.protocol.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow">Metrics</p>
+        <h2>What to log.</h2>
+        <ul class="clean-list">
+          {project.metrics.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow">Falsifiers</p>
+        <h2>What would change it.</h2>
+        <ul class="clean-list">
+          {project.falsifiers.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="section-header">
+      <p class="eyebrow">Evidence</p>
+      <h2>Current source spine.</h2>
+      <p>{project.sources.join(", ")}</p>
+    </div>
+  </section>
+</BaseLayout>
+

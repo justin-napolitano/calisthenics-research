@@ -1,0 +1,25 @@
+transfer_links:
+  - id: transfer.squat-to-grappling-base
+    from: skill.bodyweight-squat
+    to: skill.grappling-hip-escape
+    hypothesis: Squat and hinge control may improve the ability to keep base while creating space.
+    status: seed
+
+  - id: transfer.single-leg-balance-to-check
+    from: skill.tree-pose
+    to: skill.muay-thai-check
+    hypothesis: Quiet single-leg balance may support a cleaner check and faster stance recovery.
+    status: seed
+
+  - id: transfer.force-from-floor-to-jab
+    from: atom.force-from-floor
+    to: skill.boxing-jab
+    hypothesis: Understanding ground force reduces arm-only punching.
+    status: seed
+
+  - id: transfer-running-base-to-stance
+    from: skill.sustainable-5k
+    to: atom.base-tripod-foot
+    hypothesis: Running logs may reveal foot, ankle, and hip constraints that also affect stance sports.
+    status: seed
+

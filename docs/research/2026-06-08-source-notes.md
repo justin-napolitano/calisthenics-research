@@ -49,7 +49,7 @@ NSCA guidance supports 2 to 3 full-body resistance sessions per week for beginne
 
 Use in repo:
 
-- The routine can be daily as a habit, but hard full-body resistance should start at 3 nonconsecutive days.
+- The routine can be daily as a habit, but focused resistance work should start at 2 to 3 nonconsecutive days.
 - Easy days should not quietly become hard days.
 
 ### Mayo Clinic Warm-Up And Cool-Down
@@ -87,5 +87,4 @@ Use in repo:
 
 ## Seed Interpretation
 
-The evidence supports a simple daily movement habit, but not hard full-body calisthenics to fatigue every day. The seed routine should start with 3 hard days, 4 easy daily-baseline days, clear stop signals, and a 14-day review before progression.
-
+The evidence supports a simple daily movement habit, but not hard full-body calisthenics to fatigue every day. After adding the user's fixed Wednesday 5K and Thursday hot yoga anchors, the seed routine should use 2 focused calisthenics days, 1 fixed 5K, 1 hot yoga session, easy aerobic volume around those anchors, clear stop signals, and a 14-day review before progression.

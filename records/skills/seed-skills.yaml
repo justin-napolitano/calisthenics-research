@@ -1,0 +1,69 @@
+skills:
+  - id: skill.bodyweight-squat
+    name: Bodyweight squat
+    domains:
+      - calisthenics
+      - health
+    status: seed
+    atoms:
+      - atom.base-tripod-foot
+      - atom.center-of-mass-over-base
+      - atom.force-from-floor
+    purpose: Train lower-body range, balance, and force control.
+
+  - id: skill.sustainable-5k
+    name: Sustainable 5K
+    domains:
+      - running
+      - heart_health
+    status: seed
+    atoms:
+      - atom.base-tripod-foot
+      - atom.center-of-mass-over-base
+      - atom.force-from-floor
+    purpose: Maintain a weekly vigorous aerobic anchor without turning every run into a race.
+
+  - id: skill.boxing-jab
+    name: Boxing jab
+    domains:
+      - boxing
+    status: seed
+    atoms:
+      - atom.base-tripod-foot
+      - atom.center-of-mass-over-base
+      - atom.force-from-floor
+      - atom.trunk-rotation-transfer
+    purpose: Study distance, timing, guard return, and force transfer.
+
+  - id: skill.grappling-hip-escape
+    name: Grappling hip escape
+    domains:
+      - grappling
+    status: seed
+    atoms:
+      - atom.center-of-mass-over-base
+      - atom.force-from-floor
+      - atom.trunk-rotation-transfer
+    purpose: Create space by connecting floor force, trunk rotation, and frame structure.
+
+  - id: skill.muay-thai-check
+    name: Muay Thai check
+    domains:
+      - muay_thai
+    status: seed
+    atoms:
+      - atom.base-tripod-foot
+      - atom.center-of-mass-over-base
+    purpose: Study single-leg balance, posture, and force absorption.
+
+  - id: skill.tree-pose
+    name: Tree pose
+    domains:
+      - yoga
+      - mobility
+    status: seed
+    atoms:
+      - atom.base-tripod-foot
+      - atom.center-of-mass-over-base
+    purpose: Train balance, breath, and quiet stance control.
+

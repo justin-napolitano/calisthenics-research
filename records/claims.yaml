@@ -40,3 +40,118 @@ claims:
       - src-acsm-resistance-2026-infographic
       - src-nsca-training-frequency
 
+  - id: C-007
+    claim: The cardio target should be 150 to 300 moderate-equivalent minutes per week.
+    status: supported
+    sources:
+      - src-aha-physical-activity-recs
+      - src-medlineplus-exercise-dose
+      - src-cdc-adult-activity-overview
+
+  - id: C-008
+    claim: Low running doses can support heart-health goals, so the seed plan does not need high mileage.
+    status: supported
+    sources:
+      - src-jacc-running-mortality-2014
+      - src-bjsm-running-meta-analysis-2020
+
+  - id: C-009
+    claim: Hot yoga should be treated as mobility, balance, stress-management, and heat exposure unless the log shows sustained cardio intensity.
+    status: supported
+    sources:
+      - src-nccih-yoga
+      - src-mayo-hot-yoga
+
+  - id: C-010
+    claim: Balance should be treated as dynamic postural control rather than a static pose.
+    status: supported
+    sources:
+      - src-horak-postural-control-2006
+      - src-horak-macpherson-1995
+      - src-winter-balance-posture-1995
+
+  - id: C-011
+    claim: The equilibrium thesis is plausible if equilibrium includes balance, posture, base, timing, perception, and recovery options.
+    status: partially_supported
+    sources:
+      - src-horak-postural-control-2006
+      - src-judo-com-throw-analysis
+      - src-aikido-affordances-interaction
+
+  - id: C-012
+    claim: Judo kuzushi is the strongest first martial literature anchor for balance-breaking mechanics.
+    status: supported
+    sources:
+      - src-judo-com-throw-analysis
+      - src-judo-harai-goshi-competitive
+
+  - id: C-013
+    claim: Aikido supports the least-harm and redirection inspiration, but high-pressure effectiveness claims require resistance testing.
+    status: partially_supported
+    sources:
+      - src-aikido-affordances-interaction
+      - src-aikido-antagonistic-coregulation
+      - src-cla-combat-sports-2024
+
+  - id: C-014
+    claim: Skill claims should be tested through representative constraints before becoming public recommendations.
+    status: supported
+    sources:
+      - src-cla-combat-sports-2024
+      - src-constraints-led-interceptive-review-2019
+
+  - id: C-015
+    claim: Cardio optimality should be treated as a benefit-to-burden range rather than a single universal number.
+    status: supported
+    sources:
+      - src-hhs-pag-2nd-edition-pdf
+      - src-aha-physical-activity-recs
+      - src-lee-2022-pa-intensity-mortality
+      - src-arem-2015-pa-dose-mortality
+
+  - id: C-016
+    claim: A first personalized cardio target of 180 to 240 moderate-equivalent minutes per week is a reasonable hypothesis to test.
+    status: working_assumption
+    sources:
+      - src-hhs-pag-2nd-edition-pdf
+      - src-aha-physical-activity-recs
+      - src-lee-2022-pa-intensity-mortality
+
+  - id: C-017
+    claim: A health-first calisthenics floor should include 2 focused sessions per week covering all major muscle groups.
+    status: supported
+    sources:
+      - src-hhs-pag-2nd-edition-pdf
+      - src-acsm-resistance-2026-infographic
+
+  - id: C-018
+    claim: Mobility and balance should be first-class goals in the calisthenics plan, but exact personal dose requires testing.
+    status: partially_supported
+    sources:
+      - src-who-pa-guidelines
+      - src-cdc-adult-activity-overview
+
+  - id: C-019
+    claim: Running and cardio alone are not enough for a complete bone-health plan.
+    status: supported
+    sources:
+      - src-niams-exercise-bone-health
+      - src-bhof-weight-bearing-strengthening
+      - src-iof-osteoporosis-exercise
+      - src-mayo-osteoporosis-exercise
+
+  - id: C-020
+    claim: Weight-bearing cardio should be tracked separately from non-weight-bearing cardio when bone health is a goal.
+    status: supported
+    sources:
+      - src-niams-exercise-bone-health
+      - src-bhof-weight-bearing-strengthening
+      - src-medlineplus-exercise-lifestyle-bones
+
+  - id: C-021
+    claim: A daily morning floor of up to 15 minutes is a reasonable place to practice mobility, balance, posture, and low-dose bone-loading work.
+    status: working_assumption
+    sources:
+      - src-niams-exercise-bone-health
+      - src-bhof-weight-bearing-strengthening
+      - src-mayo-osteoporosis-exercise

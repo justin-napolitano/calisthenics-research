@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { evidenceHighlights } from "../data/site";
+---
+
+<BaseLayout title="Research">
+  <section class="section">
+    <div class="section-header">
+      <p class="eyebrow">Evidence spine</p>
+      <h1>Research now feeds the health journal.</h1>
+      <p>
+        The current priority is cardio, calisthenics, morning floor, and hot
+        yoga integration. Self-defense, movement database, and app sync are
+        deferred.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="grid">
+      {evidenceHighlights.map((item) => (
+        <article class="card">
+          <span class={`tag status-${item.status}`}>{item.status}</span>
+          <h3>{item.label}</h3>
+          <p>{item.claim}</p>
+          <p>{item.source}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="section-header">
+      <p class="eyebrow">Review workflow</p>
+      <h2>Every clean idea gets challenged.</h2>
+      <p>
+        Claims move through source notes, claim records, protocols, logs,
+        reviews, and decisions. That path keeps the health journal from becoming
+        another attractive but untested routine.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

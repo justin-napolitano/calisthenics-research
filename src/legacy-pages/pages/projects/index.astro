@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { activeProjects, deferredProjects } from "../../data/site";
+---
+
+<BaseLayout title="Active Projects">
+  <section class="section">
+    <div class="section-header">
+      <p class="eyebrow">Active projects</p>
+      <h1>What is being tested now.</h1>
+      <p>
+        Each project is a research thread: thesis, hypothesis, protocol, metrics,
+        falsifiers, and next decision. The goal is clarity before automation.
+      </p>
+    </div>
+    <div class="grid">
+      {activeProjects.map((project) => (
+        <article class="card">
+          <span class="tag">{project.status}</span>
+          <h3>{project.title}</h3>
+          <p>{project.thesis}</p>
+          <a class="text-link" href={`/projects/${project.slug}/`}>Open project</a>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="section-header">
+      <p class="eyebrow">Deferred</p>
+      <h2>Good ideas, not today's work.</h2>
+      <p>
+        These belong in the system, but the current priority is getting the
+        health journal and active baseline projects online.
+      </p>
+    </div>
+    <div class="grid">
+      {deferredProjects.map((project) => (
+        <article class="card">
+          <h3>{project.title}</h3>
+          <p>{project.reason}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+
